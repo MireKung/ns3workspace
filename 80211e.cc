@@ -240,7 +240,7 @@ int main (int argc, char *argv[])
   OnOffHelper clientA ("ns3::UdpSocketFactory", destA);
   clientA.SetAttribute ("OnTime", StringValue ("ns3::ConstantRandomVariable[Constant=1]"));
   clientA.SetAttribute ("OffTime", StringValue ("ns3::ConstantRandomVariable[Constant=0]"));
-  clientA.SetAttribute ("DataRate", StringValue ("100000kb/s"));
+  clientA.SetAttribute ("DataRate", StringValue ("90000kb/s"));
   clientA.SetAttribute ("PacketSize", UintegerValue (payloadSize));
 
   ApplicationContainer clientAppA = clientA.Install (wifiStaNodes.Get (0));
@@ -258,7 +258,7 @@ int main (int argc, char *argv[])
   OnOffHelper clientB ("ns3::UdpSocketFactory", destB);
   clientB.SetAttribute ("OnTime", StringValue ("ns3::ConstantRandomVariable[Constant=1]"));
   clientB.SetAttribute ("OffTime", StringValue ("ns3::ConstantRandomVariable[Constant=0]"));
-  clientB.SetAttribute ("DataRate", StringValue ("100000kb/s"));
+  clientB.SetAttribute ("DataRate", StringValue ("90000kb/s"));
   clientB.SetAttribute ("PacketSize", UintegerValue (payloadSize));
 
   ApplicationContainer clientAppB = clientB.Install (wifiStaNodes.Get (1));
@@ -276,7 +276,7 @@ int main (int argc, char *argv[])
   OnOffHelper clientC ("ns3::UdpSocketFactory", destC);
   clientC.SetAttribute ("OnTime", StringValue ("ns3::ConstantRandomVariable[Constant=1]"));
   clientC.SetAttribute ("OffTime", StringValue ("ns3::ConstantRandomVariable[Constant=0]"));
-  clientC.SetAttribute ("DataRate", StringValue ("100000kb/s"));
+  clientC.SetAttribute ("DataRate", StringValue ("90000kb/s"));
   clientC.SetAttribute ("PacketSize", UintegerValue (payloadSize));
 
   ApplicationContainer clientAppC = clientC.Install (wifiStaNodes.Get (2));
@@ -294,7 +294,7 @@ int main (int argc, char *argv[])
   OnOffHelper clientD ("ns3::UdpSocketFactory", destD);
   clientD.SetAttribute ("OnTime", StringValue ("ns3::ConstantRandomVariable[Constant=1]"));
   clientD.SetAttribute ("OffTime", StringValue ("ns3::ConstantRandomVariable[Constant=0]"));
-  clientD.SetAttribute ("DataRate", StringValue ("100000kb/s"));
+  clientD.SetAttribute ("DataRate", StringValue ("90000kb/s"));
   clientD.SetAttribute ("PacketSize", UintegerValue (payloadSize));
 
   ApplicationContainer clientAppD = clientD.Install (wifiStaNodes.Get (3));
